@@ -28,10 +28,10 @@ import (
 	"github.com/jmoiron/sqlx"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/internal"
-	. "github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/client"
+	"github.com/petuhovskiy/hydra/internal"
+	. "github.com/petuhovskiy/hydra/jwk"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/dbal/migratest"
 )

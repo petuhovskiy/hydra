@@ -9,11 +9,11 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/internal"
-	"github.com/ory/hydra/oauth2"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/client"
+	"github.com/petuhovskiy/hydra/consent"
+	"github.com/petuhovskiy/hydra/internal"
+	"github.com/petuhovskiy/hydra/oauth2"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/dbal/migratest"
 )

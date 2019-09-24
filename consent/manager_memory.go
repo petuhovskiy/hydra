@@ -25,12 +25,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ory/hydra/client"
+	"github.com/petuhovskiy/hydra/client"
 
 	"github.com/pkg/errors"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/pagination"
 )
 

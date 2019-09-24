@@ -3,8 +3,8 @@ package internal
 import (
 	"context"
 
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/driver"
+	"github.com/petuhovskiy/hydra/client"
+	"github.com/petuhovskiy/hydra/driver"
 )
 
 func AddFositeExamples(r driver.Registry) {

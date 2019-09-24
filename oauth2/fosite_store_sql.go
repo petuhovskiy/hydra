@@ -36,7 +36,7 @@ import (
 	"github.com/sirupsen/logrus"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/client"
+	"github.com/petuhovskiy/hydra/client"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/sqlcon"
 	"github.com/ory/x/stringsx"

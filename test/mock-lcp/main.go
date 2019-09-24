@@ -26,12 +26,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ory/hydra/sdk/go/hydra/client/admin"
-	"github.com/ory/hydra/sdk/go/hydra/models"
+	"github.com/petuhovskiy/hydra/sdk/go/hydra/client/admin"
+	"github.com/petuhovskiy/hydra/sdk/go/hydra/models"
 	"github.com/ory/x/pointerx"
 	"github.com/ory/x/urlx"
 
-	hydra "github.com/ory/hydra/sdk/go/hydra/client"
+	hydra "github.com/petuhovskiy/hydra/sdk/go/hydra/client"
 )
 
 var hydraURL = urlx.ParseOrPanic(os.Getenv("HYDRA_ADMIN_URL"))

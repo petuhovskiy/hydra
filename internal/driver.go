@@ -7,9 +7,9 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/jwk"
+	"github.com/petuhovskiy/hydra/driver"
+	"github.com/petuhovskiy/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/jwk"
 	"github.com/ory/x/logrusx"
 )
 

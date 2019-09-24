@@ -23,7 +23,7 @@
 package main
 
 import (
-	"github.com/ory/hydra/cmd"
+	"github.com/petuhovskiy/hydra/cmd"
 	"github.com/ory/x/profilex"
 )
 

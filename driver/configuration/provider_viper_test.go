@@ -14,7 +14,7 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/logrusx"
 )
 

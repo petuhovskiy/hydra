@@ -28,23 +28,23 @@ import (
 
 	"github.com/go-openapi/strfmt"
 
-	"github.com/ory/hydra/sdk/go/hydra/client/admin"
-	"github.com/ory/hydra/sdk/go/hydra/models"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/sdk/go/hydra/client/admin"
+	"github.com/petuhovskiy/hydra/sdk/go/hydra/models"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/pointerx"
 	"github.com/ory/x/urlx"
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/driver/configuration"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/hydra/internal"
+	"github.com/petuhovskiy/hydra/internal"
 
-	"github.com/ory/hydra/client"
-	hydra "github.com/ory/hydra/sdk/go/hydra/client"
+	"github.com/petuhovskiy/hydra/client"
+	hydra "github.com/petuhovskiy/hydra/sdk/go/hydra/client"
 )
 
 func createTestClient(prefix string) *models.Client {

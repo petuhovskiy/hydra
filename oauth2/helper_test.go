@@ -5,7 +5,7 @@ import (
 
 	"github.com/ory/fosite/handler/oauth2"
 	"github.com/ory/fosite/token/hmac"
-	"github.com/ory/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/driver/configuration"
 )
 
 func Tokens(c configuration.Provider, length int) (res [][]string) {

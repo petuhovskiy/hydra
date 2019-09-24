@@ -3,10 +3,10 @@ package consent
 import (
 	"github.com/ory/fosite"
 	"github.com/ory/fosite/handler/openid"
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/client"
+	"github.com/petuhovskiy/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/jwk"
+	"github.com/petuhovskiy/hydra/x"
 )
 
 type InternalRegistry interface {

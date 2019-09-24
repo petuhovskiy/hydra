@@ -27,7 +27,7 @@ import (
 
 	"github.com/ory/x/stringslice"
 
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/x"
 
 	"github.com/julienschmidt/httprouter"
 	"github.com/pkg/errors"

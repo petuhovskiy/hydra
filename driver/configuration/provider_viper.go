@@ -15,7 +15,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/cmdx"
 	"github.com/ory/x/stringslice"
 	"github.com/ory/x/tracing"

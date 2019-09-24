@@ -181,11 +181,11 @@ The Go SDK is now being generated using `go-swagger`. The SDK generated using `s
 The old Go SDK is still available but moved to a new path. To use it, change:
 
 ```
-- import "github.com/ory/hydra/sdk/go/hydra"
-- import "github.com/ory/hydra/sdk/go/hydra/swagger"
+- import "github.com/petuhovskiy/hydra/sdk/go/hydra"
+- import "github.com/petuhovskiy/hydra/sdk/go/hydra/swagger"
 
-+ import hydra "github.com/ory/hydra-legacy-sdk"
-+ import "github.com/ory/hydra-legacy-sdk/swagger"
++ import hydra "github.com/petuhovskiy/hydra-legacy-sdk"
++ import "github.com/petuhovskiy/hydra-legacy-sdk/swagger"
 ```
 
 ### Accepting Login and Consent Requests
@@ -233,7 +233,7 @@ This patch introduces changes to the way configuration works in ORY Hydra. It al
 a variety of sources including environment variables and a configuration file. In the future, ORY Hydra might be configurable
 using etcd or consul. The changes allow ORY Hydra to reload configuration without restarting in the future.
 
-An overview of configuration settings can be found [here](https://github.com/ory/hydra/blob/master/docs/config.yaml).
+An overview of configuration settings can be found [here](https://github.com/petuhovskiy/hydra/blob/master/docs/config.yaml).
 
 All changes are backwards compatible except for the way key rotation works (see next section) and the way DBAL plugins
 are loaded (see section after next).
@@ -824,7 +824,7 @@ and `User Consent Provider`. If you implement both features (explained in the ne
 it the `User Login and Consent Provider`.
 
 A reference implementation of the new User Login and Consent Provider is available at
-[github.com/ory/hydra-login-consent-node](https://github.com/ory/hydra-login-consent-node).
+[github.com/petuhovskiy/hydra-login-consent-node](https://github.com/petuhovskiy/hydra-login-consent-node).
 
 The major difference between the old and new flow is, that authentication (user login) and scope authorization (user consent)
 are now two separate endpoints.
@@ -918,11 +918,11 @@ Please help improving this section by adding upgrade guides for the SDK you upgr
 The following methods have been moved.
 
 * The Access Control Policy SDK has moved to ORY Keto:
-  * `CreatePolicy(body swagger.Policy) (*swagger.Policy, *swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/ory/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
-  * `DeletePolicy(id string) (*swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/ory/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
-  * `GetPolicy(id string) (*swagger.Policy, *swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/ory/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
-  * `ListPolicies(offset int64, limit int64) ([]swagger.Policy, *swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/ory/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
-  * `UpdatePolicy(id string, body swagger.Policy) (*swagger.Policy, *swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/ory/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
+  * `CreatePolicy(body swagger.Policy) (*swagger.Policy, *swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/petuhovskiy/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
+  * `DeletePolicy(id string) (*swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/petuhovskiy/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
+  * `GetPolicy(id string) (*swagger.Policy, *swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/petuhovskiy/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
+  * `ListPolicies(offset int64, limit int64) ([]swagger.Policy, *swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/petuhovskiy/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
+  * `UpdatePolicy(id string, body swagger.Policy) (*swagger.Policy, *swagger.APIResponse, error)` is now available via `github.com/ory/keto/sdk/go/keto`. The method signature has not changed, apart from types `github.com/petuhovskiy/hydra/sdk/go/hydra/swagger` now being included from `github.com/ory/keto/sdk/go/keto/swagger`.
 * The Warden Group SDK has moved to Keto:
   - `AddMembersToGroup(id string, body swagger.GroupMembers) (*swagger.APIResponse, error)` is now `AddMembersToRole(id string, body swagger.RoleMembers) (*swagger.APIResponse, error)` and is now available via `github.com/ory/keto/sdk/go/keto`.
   - `CreateGroup(body swagger.Group) (*swagger.Group, *swagger.APIResponse, error)` is now `CreateRole(body swagger.Role) (*swagger.Role, *swagger.APIResponse, error` and is now available via `github.com/ory/keto/sdk/go/keto`.
@@ -1109,7 +1109,7 @@ is typically a URL identifying the endpoint(s) the token is intended for. For ex
 endpoint `http://mydomain.com/users`, then the audience would be `http://mydomain.com/users`.
 
 This changes the payload of `/warden/token/allowed` and is incorporated in the new consent flow as well. Please note
-that it is currently not possible to set the audience of a token. This feature is tracked with [here](https://github.com/ory/hydra/issues/687).
+that it is currently not possible to set the audience of a token. This feature is tracked with [here](https://github.com/petuhovskiy/hydra/issues/687).
 
 **IMPORTANT NOTE:** In OpenID Connect ID Tokens, the token is issued for that client. Thus, the `aud` claim must equal
 to the `client_id` that initiated the request.
@@ -1277,12 +1277,12 @@ release [here](https://github.com/ory/ladon/blob/master/HISTORY.md#060).
 #### Redis and RethinkDB deprecated
 
 Redis and RethinkDB are removed from the repository now and no longer supported, see
-[this issue](https://github.com/ory/hydra/issues/425).
+[this issue](https://github.com/petuhovskiy/hydra/issues/425).
 
 #### Moved to ory namespace
 
 To reflect the GitHub organization rename, Hydra was moved from `https://github.com/ory-am/hydra` to
-`https://github.com/ory/hydra`.
+`https://github.com/petuhovskiy/hydra`.
 
 #### SDK
 

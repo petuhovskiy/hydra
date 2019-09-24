@@ -31,7 +31,7 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/cmd/cli"
+	"github.com/petuhovskiy/hydra/cmd/cli"
 )
 
 var cfgFile string

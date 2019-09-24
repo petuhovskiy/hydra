@@ -1,8 +1,8 @@
 package jwk
 
 import (
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/x"
 )
 
 type InternalRegistry interface {

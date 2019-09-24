@@ -37,8 +37,8 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"golang.org/x/oauth2"
 
-	hydra "github.com/ory/hydra/sdk/go/hydra/client"
-	"github.com/ory/hydra/sdk/go/hydra/client/admin"
+	hydra "github.com/petuhovskiy/hydra/sdk/go/hydra/client"
+	"github.com/petuhovskiy/hydra/sdk/go/hydra/client/admin"
 	"github.com/ory/x/cmdx"
 	"github.com/ory/x/urlx"
 )

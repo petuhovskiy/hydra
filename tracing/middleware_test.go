@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/urfave/negroni"
 
-	"github.com/ory/hydra/tracing"
+	"github.com/petuhovskiy/hydra/tracing"
 )
 
 var mockedTracer *mocktracer.MockTracer

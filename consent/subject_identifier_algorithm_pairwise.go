@@ -28,7 +28,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/client"
+	"github.com/petuhovskiy/hydra/client"
 )
 
 type SubjectIdentifierAlgorithmPairwise struct {

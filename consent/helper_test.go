@@ -27,7 +27,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/client"
+	"github.com/petuhovskiy/hydra/client"
 )
 
 func TestSanitizeClient(t *testing.T) {

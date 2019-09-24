@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ory/hydra/driver"
+	"github.com/petuhovskiy/hydra/driver"
 )
 
 type MemTestPlugin struct {

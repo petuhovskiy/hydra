@@ -29,23 +29,23 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ory/hydra/sdk/go/hydra/client/admin"
-	"github.com/ory/hydra/sdk/go/hydra/models"
+	"github.com/petuhovskiy/hydra/sdk/go/hydra/client/admin"
+	"github.com/petuhovskiy/hydra/sdk/go/hydra/models"
 	"github.com/ory/x/pointerx"
 	"github.com/ory/x/urlx"
 
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/x"
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
+	"github.com/petuhovskiy/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/internal"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	"github.com/ory/fosite"
-	hydra "github.com/ory/hydra/sdk/go/hydra/client"
+	hydra "github.com/petuhovskiy/hydra/sdk/go/hydra/client"
 )
 
 func TestIntrospectorSDK(t *testing.T) {

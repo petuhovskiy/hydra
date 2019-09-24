@@ -1,4 +1,4 @@
-module github.com/ory/hydra
+module github.com/petuhovskiy/hydra
 
 require (
 	cloud.google.com/go/bigquery v1.0.1 // indirect

@@ -13,7 +13,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	models "github.com/ory/hydra/sdk/go/hydra/models"
+	models "github.com/petuhovskiy/hydra/sdk/go/hydra/models"
 )
 
 // CreateOAuth2ClientReader is a Reader for the CreateOAuth2Client structure.

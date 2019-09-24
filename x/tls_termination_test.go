@@ -10,9 +10,9 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
-	. "github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/internal"
+	. "github.com/petuhovskiy/hydra/x"
 )
 
 func panicHandler(w http.ResponseWriter, r *http.Request) {

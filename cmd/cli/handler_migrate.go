@@ -36,8 +36,8 @@ import (
 	"github.com/ory/x/flagx"
 	"github.com/ory/x/logrusx"
 
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/driver"
+	"github.com/petuhovskiy/hydra/driver/configuration"
 )
 
 type MigrateHandler struct{}

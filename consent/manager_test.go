@@ -33,11 +33,11 @@ import (
 
 	"github.com/ory/viper"
 
-	. "github.com/ory/hydra/consent"
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
-	"github.com/ory/hydra/x"
+	. "github.com/petuhovskiy/hydra/consent"
+	"github.com/petuhovskiy/hydra/driver"
+	"github.com/petuhovskiy/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/internal"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/sqlcon/dockertest"
 )
 

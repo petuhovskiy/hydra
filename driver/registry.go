@@ -6,16 +6,16 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	"github.com/ory/hydra/metrics/prometheus"
+	"github.com/petuhovskiy/hydra/metrics/prometheus"
 	"github.com/ory/x/cmdx"
 	"github.com/ory/x/tracing"
 
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/oauth2"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/client"
+	"github.com/petuhovskiy/hydra/consent"
+	"github.com/petuhovskiy/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/jwk"
+	"github.com/petuhovskiy/hydra/oauth2"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/dbal"
 	"github.com/ory/x/healthx"
 )

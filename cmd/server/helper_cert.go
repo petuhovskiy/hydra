@@ -28,12 +28,12 @@ import (
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver"
+	"github.com/petuhovskiy/hydra/driver"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	"github.com/ory/hydra/jwk"
+	"github.com/petuhovskiy/hydra/jwk"
 	"github.com/ory/x/tlsx"
 )
 

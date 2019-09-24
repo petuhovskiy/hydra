@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ory/hydra/sdk/go/hydra/client/public"
+	"github.com/petuhovskiy/hydra/sdk/go/hydra/client/public"
 	"github.com/ory/x/urlx"
 
-	"github.com/ory/hydra/internal"
+	"github.com/petuhovskiy/hydra/internal"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -38,9 +38,9 @@ import (
 	httptransport "github.com/go-openapi/runtime/client"
 
 	"github.com/ory/fosite"
-	"github.com/ory/hydra/oauth2"
-	hydra "github.com/ory/hydra/sdk/go/hydra/client"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/oauth2"
+	hydra "github.com/petuhovskiy/hydra/sdk/go/hydra/client"
+	"github.com/petuhovskiy/hydra/x"
 )
 
 func createAccessTokenSession(subject, client string, token string, expiresAt time.Time, fs x.FositeStorer, scopes fosite.Arguments) {

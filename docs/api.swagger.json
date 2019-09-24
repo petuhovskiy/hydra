@@ -1936,7 +1936,7 @@
         }
       },
       "x-go-name": "swaggerJSONWebKey",
-      "x-go-package": "github.com/ory/hydra/jwk"
+      "x-go-package": "github.com/petuhovskiy/hydra/jwk"
     },
     "JSONWebKeySet": {
       "type": "object",
@@ -1951,7 +1951,7 @@
         }
       },
       "x-go-name": "swaggerJSONWebKeySet",
-      "x-go-package": "github.com/ory/hydra/jwk"
+      "x-go-package": "github.com/petuhovskiy/hydra/jwk"
     },
     "PreviousConsentSession": {
       "description": "The response used to return used consent requests\nsame as HandledLoginRequest, just with consent_request exposed as json",
@@ -1991,7 +1991,7 @@
           "$ref": "#/definitions/consentRequestSession"
         }
       },
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "acceptConsentRequest": {
       "type": "object",
@@ -2029,7 +2029,7 @@
         }
       },
       "x-go-name": "HandledConsentRequest",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "acceptLoginRequest": {
       "type": "object",
@@ -2074,7 +2074,7 @@
         }
       },
       "x-go-name": "HandledLoginRequest",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "completedRequest": {
       "type": "object",
@@ -2087,7 +2087,7 @@
         }
       },
       "x-go-name": "RequestHandlerResponse",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "consentRequest": {
       "type": "object",
@@ -2160,7 +2160,7 @@
         }
       },
       "x-go-name": "ConsentRequest",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "consentRequestSession": {
       "type": "object",
@@ -2184,7 +2184,7 @@
         }
       },
       "x-go-name": "ConsentRequestSessionData",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "flushInactiveOAuth2TokensRequest": {
       "type": "object",
@@ -2197,7 +2197,7 @@
         }
       },
       "x-go-name": "FlushInactiveOAuth2TokensRequest",
-      "x-go-package": "github.com/ory/hydra/oauth2"
+      "x-go-package": "github.com/petuhovskiy/hydra/oauth2"
     },
     "genericError": {
       "description": "Error responses are sent when an error (e.g. unauthorized, bad request, ...) occurred.",
@@ -2233,7 +2233,7 @@
           "example": 404
         }
       },
-      "x-go-package": "github.com/ory/hydra"
+      "x-go-package": "github.com/petuhovskiy/hydra"
     },
     "healthNotReadyStatus": {
       "type": "object",
@@ -2287,7 +2287,7 @@
         }
       },
       "x-go-name": "createRequest",
-      "x-go-package": "github.com/ory/hydra/jwk"
+      "x-go-package": "github.com/petuhovskiy/hydra/jwk"
     },
     "loginRequest": {
       "type": "object",
@@ -2342,7 +2342,7 @@
         }
       },
       "x-go-name": "LoginRequest",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "logoutRequest": {
       "type": "object",
@@ -2370,7 +2370,7 @@
         }
       },
       "x-go-name": "LogoutRequest",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "oAuth2Client": {
       "type": "object",
@@ -2561,7 +2561,7 @@
         }
       },
       "x-go-name": "Client",
-      "x-go-package": "github.com/ory/hydra/client"
+      "x-go-package": "github.com/petuhovskiy/hydra/client"
     },
     "oAuth2TokenIntrospection": {
       "description": "https://tools.ietf.org/html/rfc7662",
@@ -2647,7 +2647,7 @@
         }
       },
       "x-go-name": "Introspection",
-      "x-go-package": "github.com/ory/hydra/oauth2"
+      "x-go-package": "github.com/petuhovskiy/hydra/oauth2"
     },
     "oauth2TokenResponse": {
       "description": "The Access Token Response",
@@ -2672,7 +2672,7 @@
         }
       },
       "x-go-name": "swaggeroauth2TokenResponse",
-      "x-go-package": "github.com/ory/hydra/oauth2"
+      "x-go-package": "github.com/petuhovskiy/hydra/oauth2"
     },
     "oauthTokenResponse": {
       "description": "The token response",
@@ -2713,7 +2713,7 @@
         }
       },
       "x-go-name": "swaggerOAuthTokenResponse",
-      "x-go-package": "github.com/ory/hydra/oauth2"
+      "x-go-package": "github.com/petuhovskiy/hydra/oauth2"
     },
     "openIDConnectContext": {
       "type": "object",
@@ -2755,7 +2755,7 @@
         }
       },
       "x-go-name": "OpenIDConnectContext",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "rejectRequest": {
       "type": "object",
@@ -2784,7 +2784,7 @@
         }
       },
       "x-go-name": "RequestDeniedError",
-      "x-go-package": "github.com/ory/hydra/consent"
+      "x-go-package": "github.com/petuhovskiy/hydra/consent"
     },
     "userinfoResponse": {
       "description": "The userinfo response",
@@ -2888,7 +2888,7 @@
         }
       },
       "x-go-name": "swaggeruserinfoResponsePayload",
-      "x-go-package": "github.com/ory/hydra/oauth2"
+      "x-go-package": "github.com/petuhovskiy/hydra/oauth2"
     },
     "version": {
       "type": "object",
@@ -3076,7 +3076,7 @@
         }
       },
       "x-go-name": "WellKnown",
-      "x-go-package": "github.com/ory/hydra/oauth2"
+      "x-go-package": "github.com/petuhovskiy/hydra/oauth2"
     }
   },
   "responses": {

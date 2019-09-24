@@ -26,13 +26,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/x"
 
 	"github.com/ory/viper"
 
-	"github.com/ory/hydra/driver/configuration"
-	"github.com/ory/hydra/internal"
-	"github.com/ory/hydra/oauth2"
+	"github.com/petuhovskiy/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/internal"
+	"github.com/petuhovskiy/hydra/oauth2"
 
 	"github.com/stretchr/testify/assert"
 )

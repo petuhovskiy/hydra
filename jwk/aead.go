@@ -23,7 +23,7 @@ package jwk
 import (
 	"encoding/base64"
 
-	"github.com/ory/hydra/driver/configuration"
+	"github.com/petuhovskiy/hydra/driver/configuration"
 
 	"github.com/gtank/cryptopasta"
 	"github.com/pkg/errors"

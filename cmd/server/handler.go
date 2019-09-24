@@ -30,8 +30,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/ory/hydra/driver"
-	"github.com/ory/hydra/x"
+	"github.com/petuhovskiy/hydra/driver"
+	"github.com/petuhovskiy/hydra/x"
 	"github.com/ory/x/flagx"
 	"github.com/ory/x/logrusx"
 
@@ -42,10 +42,10 @@ import (
 	"github.com/urfave/negroni"
 
 	"github.com/ory/graceful"
-	"github.com/ory/hydra/client"
-	"github.com/ory/hydra/consent"
-	"github.com/ory/hydra/jwk"
-	"github.com/ory/hydra/oauth2"
+	"github.com/petuhovskiy/hydra/client"
+	"github.com/petuhovskiy/hydra/consent"
+	"github.com/petuhovskiy/hydra/jwk"
+	"github.com/petuhovskiy/hydra/oauth2"
 	"github.com/ory/x/healthx"
 	"github.com/ory/x/metricsx"
 )
